@@ -1,0 +1,30 @@
+{% extends 'home.html' %}
+
+{% load static %}
+
+{% block body %}
+<div class="main-content">
+    <div class="container">
+        <div class="header">Sign In</div>
+        <div class="tabs">
+            <a href="#" class="active">Phone</a>
+            <a href="#">Email</a>
+        </div>
+        <label class="input-label" for="mobile-number">Mobile Number *</label>
+        <input type="text" id="mobile-number" class="input-field" placeholder="Enter Your Mobile Number">
+        <div class="separator">Or</div>
+        <div class="buttons">
+            <button class="btn google-btn">
+                <span class="google-icon">G</span> Continue with Google
+            </button>
+            <button class="btn new-account-btn">
+                <span class="account-icon">👤</span> Create a New Account
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock body %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'signin.css' %}">
+{% endblock css %}

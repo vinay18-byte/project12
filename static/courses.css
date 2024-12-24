@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
+}
+
+.header h1 span {
+    color: #24cfa6;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #aaa;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.course-card {
+    background-color: #222;
+    border-radius: 8px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.course-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.course-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.course-card .price {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.course-card .discount {
+    text-decoration: line-through;
+    color: #ff4d4d;
+}
+
+.course-card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color:#24cfa6;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.course-card .btn:hover {
+    background-color: #24cfa6;
+}

@@ -1,0 +1,134 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background and basic font styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;  /* Black background for the entire page */
+    color: white;  /* White text for the entire page */
+    padding: 0;
+    margin: 0;
+}
+
+/* Main container that centers content vertically and horizontally */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;  /* Ensure the form is vertically centered */
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Container for the sign-in form */
+.container {
+    width: 100%;
+    max-width: 400px;  /* Limit the form width */
+    background-color: #222;  /* Dark background for the modal */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Sign-in header */
+.header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;  /* White text for the header */
+}
+
+/* Tabs for switching between phone/email login */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: white;  /* White text color for tabs */
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #444;  /* Dark background for tabs */
+}
+
+.tabs a.active {
+    background-color: #007bff;  /* Blue color for the active tab */
+    color: white;
+}
+
+/* Input field and label styling */
+.input-label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;  /* White text for the label */
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #555;  /* Dark border for input fields */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333;  /* Dark background for inputs */
+    color: white;  /* White text inside input fields */
+}
+
+.separator {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #888;  /* Light grey color for the separator text */
+}
+
+/* Buttons styling */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.google-btn {
+    background-color: #db4437;  /* Google red color */
+    color: white;
+}
+
+.google-btn:hover {
+    background-color: #c1351d;
+}
+
+.new-account-btn {
+    background-color: #007bff;  /* Blue color for the "Create Account" button */
+    color: white;
+}
+
+.new-account-btn:hover {
+    background-color: #0056b3;
+}
+
+.account-icon {
+    margin-right: 8px;
+}
+
+.google-icon {
+    margin-right: 8px;
+}

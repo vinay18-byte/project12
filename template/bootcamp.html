@@ -1,0 +1,64 @@
+bootcamp html
+{% extends 'home.html' %}
+
+{% load static %}
+
+{% block body %}
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-text">Hurry up! Join bootcamp</h1>
+    </div>
+</div>
+
+
+<section class="intro-section">
+    <h2 class="intro-heading">We are arranging bootcamps</h2>
+    <p class="intro-subheading">Join to register for the latest bootcamps</p>
+    <center><a class="cta-button" href="{% url 'app1:form' %}">Click Here</a></center>
+</section>
+
+
+<section class="bootcamp-section">
+    <h1 class="bootcamp-title">Python Bootcamp</h1>
+    <p class="bootcamp-description">Ready to start your Python journey? Join the Python Bootcamp today!</p>
+    <p class="bootcamp-details">Welcome to the Python Bootcamp! This bootcamp is designed to teach you Python programming from scratch, and by the end, you'll have the skills to develop real-world applications using Python.</p>
+    <h2 class="curriculum-title">Bootcamp Curriculum:</h2>
+    <ul class="curriculum-list">
+        <li>The bootcamp will start from 01-Jan-2025 and end on 31-Mar-2025.</li>
+        <li>Learn Python syntax, basic programming concepts, functions, and OOPS concepts.</li>
+        <li>Understand variables, data types, and control flow (loops, if-else conditions).</li>
+        <li>Start writing simple Python programs.</li>
+    </ul>
+</section>
+
+<section class="bootcamp-section">
+    <h1 class="bootcamp-title">Java Bootcamp</h1>
+    <p class="bootcamp-description">Ready to start your Java journey? Join the Java Bootcamp today!</p>
+    <p class="bootcamp-details">Welcome to the Java Bootcamp! This bootcamp is designed to teach you Java programming from scratch, and by the end, you'll have the skills to develop real-world applications using Java.</p>
+    <h2 class="curriculum-title">Bootcamp Curriculum:</h2>
+    <ul class="curriculum-list">
+        <li>The bootcamp will start from 20-Jan-2025 and end on 20-April-2025.</li>
+        <li>Learn Java syntax, basic programming concepts, functions, and OOPS concepts.</li>
+        <li>Understand variables, data types, and control flow (loops, if-else conditions).</li>
+        <li>Start writing simple Java programs.</li>
+    </ul>
+</section>
+
+
+<section class="bootcamp-section">
+    <h1 class="bootcamp-title">Web Technology Bootcamp</h1>
+    <p class="bootcamp-description">Ready to start your Web Technology journey? Join the WebTech Bootcamp today!</p>
+    <p class="bootcamp-details">Welcome to the Web Technology Bootcamp! This bootcamp is designed to teach you web page design, and by the end, you'll have the skills to design dynamic web pages.</p>
+    <h2 class="curriculum-title">Bootcamp Curriculum:</h2>
+    <ul class="curriculum-list">
+        <li>The bootcamp will start from 15-Jan-2025 and end on 20-April-2025.</li>
+        <li>Learn JavaScript, HTML, and CSS.</li>
+        <li>Learn to create interactive and responsive web pages.</li>
+    </ul>
+</section>
+
+{% endblock body %}
+
+{% block css %}
+<link href="{% static 'bootcamp.css' %}" rel="stylesheet" type="text/css">
+{% endblock css %}

@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block css %}
+    {% endblock css %}
+</head>
+
+<body>
+    <header>
+        <!-- <div class="logo">
+            <a href="{% url 'myapp:home' %}">
+                <span>🦁</span> Luffysan Coding School
+            </a>
+        </div> -->
+            <div class="logo">
+                <span>🦁</span> Luffysan Coding School
+            </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'app1':home' %}" class="nav-link">Home</a></li>
+                <li><a href="{% url 'app1:courses' %}" class="nav-link">Courses</a></li>
+                <li><a href="{% url 'app1:bootcamp' %}" class="nav-link">Bootcamp</a></li>
+                <li><a href="{% url 'app1:requestcallback' %}" class="nav-link">Request Callback</a></li>
+            </ul>
+        </nav>
+        <div class="signin">
+            <a href="{% url 'app1:signin' %}"><button>Sign In</button></a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    {% block body %}
+    
+    <main>
+        <div class="hero">
+            <h1>We only <span class="highlight">teach</span> what we are really really <em>good</em> at.</h1>
+            <p>
+                Get ready to <span class="highlight">accelerate your career</span> with customized courses 
+                and leave your mark in the tech industry.
+            </p>
+            <a href="{% url 'myapp:courses' %}">
+                <button class="cta-button">Check Courses-Make an Impact</button>
+            </a>
+        </div>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div>
+                <h2>25k+</h2>
+                <p>Students taught</p>
+            </div>
+            <div>
+                <h2>20+</h2>
+                <p>Instructors</p>
+            </div>
+            <div>
+                <h2>431k+</h2>
+                <p>Youtube Subs.</p>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="featured-video">
+            <h2>We do whatever it takes to <br>
+                help you understand the concepts
+            </h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/60SRAWmMXyc"" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Top Companies Section -->
+        <section class="top-companies">
+            <center>
+                <h2>Top <span class="highlight">companies</span> our students are working with</h2>
+            </center>
+            <div class="companies">
+                <img src="{% static 'images/companies_CcvVE6pUo.webp' %}" alt="Netlink">
+            </div>
+            <center><a href="{% url 'myapp:freelearning' %}">
+                <button class="cta-button">Explore free learning</button></center>
+            </a>
+        </section>
+    </main>
+    {% endblock body %}
+
+    <footer>
+        <section class="footer-links">
+            <div>
+                <h3>COMPANY</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Support</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms and Conditions</li>
+                    <li>Pricing and Refund</li>
+                    <li>Hire from Us</li>
+                </ul>
+            </div>
+            <div>
+                <h3>COMMUNITY</h3>
+                <ul>
+                    <li>Inertia</li>
+                    <li>Discord</li>
+                </ul>
+            </div>
+            <div>
+                <h3>GET IN TOUCH</h3>
+                <ul>
+                    <li>📞 +91 123456789</li>
+                    <li>✉ hello@gmail.com</li>
+                </ul>
+            </div>
+        </section>
+        <p>Copyright 2024 Luffysan Pvt. Ltd. All Rights Reserved</p>
+    </footer>
+    
+</body>
+</html>

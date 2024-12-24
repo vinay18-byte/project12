@@ -1,0 +1,106 @@
+/* Resetting default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background and basic font styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;  /* Black background for the whole page */
+    color: white;  /* White text for the whole page */
+    padding: 0;
+    margin: 0;
+}
+
+/* Main container that centers content vertically and horizontally */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Modal styles for the callback form */
+.modal {
+    width: 100%;
+    max-width: 400px; /* Reduced size for a more compact form */
+    background-color: #222;  /* Dark background for the modal */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Modal header for the form title */
+.modal-header h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;  /* White color for the heading */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grouping form elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;  /* White color for labels */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="tel"],
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #555;  /* Dark border for input fields */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333;  /* Dark background for inputs */
+    color: white;  /* White text inside input fields */
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="datetime-local"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit button styles */
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Adding a small footer or closing button (could be used for closing the modal) */
+.close {
+    font-size: 30px;
+    color: white;  /* White color for the close button */
+    cursor: pointer;
+}
